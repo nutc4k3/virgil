@@ -1,3 +1,7 @@
+---
+description: Exploring exploitation of the Python interpreter and associated scripts.
+---
+
 # Python
 
 Python is a language powering an extraordinary number of applications, but here we're just going to focus on very common coding errors you're likely to find. These can be useful in cases of both web applications as well as local and exploiting any of these is incredibly context specific.
