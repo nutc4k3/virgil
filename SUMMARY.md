@@ -9,4 +9,5 @@
   * [VNC](linux/vnc.md)
 * [OS Agnostic](os-agnostic/README.md)
   * [Python](os-agnostic/python.md)
+  * [Erlang](os-agnostic/erlang.md)
 
