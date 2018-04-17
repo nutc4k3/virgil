@@ -1,5 +1,7 @@
 # Virgil
 
+![](https://images.curiator.com/images/t_x/art/bikf4lam7gzznve0i08u/gustave-dore-dantes-inferno.jpg)
+
 > Midway upon the journey of our life  
 >   I found myself within a forest dark,  
 >   For the straightforward pathway had been lost
