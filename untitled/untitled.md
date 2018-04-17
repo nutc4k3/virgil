@@ -27,5 +27,11 @@ Configuration option 'xp_cmdshell' changed from 0 to 1. Run the RECONFIGURE stat
 2> go
 ```
 
+## Server Links
+
+The best reference for exploiting server links is [SQL Server – Link… Link… Link… and Shell: How to Hack Database Links in SQL Server!](https://blog.netspi.com/how-to-hack-database-links-in-sql-server/) They're not hard to pull off and can allow you to escalate your permissions quite easily. However, do note that you should absolutely use rpc\_out if it's enabled.
+
+Since OpenQuery can only satisfy user queries, stored procedures or user creation is not possible and makes your escalation path much more difficult.
+
 
 
