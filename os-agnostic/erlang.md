@@ -122,7 +122,7 @@ drwxr-xr-x 2 root root 4096 Apr 10 01:39 .tmp_dir531002228620
 -rw-r--r-- 1 root root 10 Apr 16 20:15 secret
 ```
 
-Whilst this may not be a particularly surprising result for Erlang developers, it does represent a quite frightening realization that a single node being compromised will indeed compromise the entire network. This is more making other security researchers aware that if they're attacking an Erlang node, to absolutely do it from a secure VM that has no potential to leak their personal data. A Docker contianer is ideal.
+Whilst this may not be a particularly surprising result for Erlang developers, it does represent a quite frightening realization that a single node being compromised will indeed compromise the entire network. This is more making other security researchers aware that if they're attacking an Erlang node, to absolutely do it from a secure VM that has no potential to leak their personal data. A Docker container is ideal for an attack.
 
 **References**
 
