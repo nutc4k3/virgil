@@ -65,3 +65,11 @@ In module importing, the interpreter will first check the local directory before
 
 A good reference for how these things work is [this Stackoverflow post](https://stackoverflow.com/questions/31849378/whats-the-order-python-used-to-import-module).
 
+## Jail Shells
+
+The topic of python jail shells risks becoming very weighty due to the sheer mass of methods different CTF creators or Pentesters have found to bypass them, but as they make for almost standard fare in CTF challenges, I feel like a collection of different methods wouldn't go amiss.
+
+[PlaidCTF - PyJail with Character Restrictions](http://wapiflapi.github.io/2013/04/22/plaidctf-pyjail-story-of-pythons-escape/)
+
+
+
