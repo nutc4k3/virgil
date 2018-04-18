@@ -5,7 +5,7 @@
 Authentication between Erlang nodes is rather unique to anything I've seen elsewhere, and it all happens through the magic of cookies. The [documentation ](http://erlang.org/doc/reference_manual/distributed.html)sums this up well:
 
 > Authentication determines which nodes are allowed to communicate with each other. In a network of different Erlang nodes, it is built into the system at the lowest possible level. Each node has its own magic cookie, which is an Erlang atom.
-
+>
 > When a node tries to connect to another node, the magic cookies are compared. If they do not match, the connected node rejects the connection.
 
 If the authentication cookie is leaked then theoretically we can abuse the nature of Erlang's inter-connectivity to achieve command execution on a node we shouldn't necessarily be able to. Due to the distributed nature of Erlang also, this represents a fundamental risk.
@@ -133,9 +133,10 @@ Whilst this may not be a particularly surprising result for Erlang developers, i
 
 The code for cookie creation lies in [lib/kernel/src/auth.erl](https://github.com/erlang/otp/blob/master/lib/kernel/src/auth.erl).
 
-**Further Reading**
+## Further Reading
 
 [NCC Group - Erlang Security 101](https://www.nccgroup.trust/globalassets/our-research/uk/whitepapers/2014/erlang_security_101_v1-0.pdf)  
 [https://github.com/msantos/spoofed](https://github.com/msantos/spoofed)  
 [https://www.youtube.com/watch?v=42k70Y-yTYY](https://www.youtube.com/watch?v=42k70Y-yTYY)  
-[https://conference.hitb.org/hitbsecconf2017ams/materials/D2T4 - Don Bailey - Unauthorized Erlang.pdf](https://conference.hitb.org/hitbsecconf2017ams/materials/D2T4 - Don Bailey - Unauthorized Erlang.pdf)
+[https://conference.hitb.org/hitbsecconf2017ams/materials/D2T4 - Don Bailey - Unauthorized Erlang.pdf](https://conference.hitb.org/hitbsecconf2017ams/materials/D2T4%20-%20Don%20Bailey%20-%20Unauthorized%20Erlang.pdf)
+
