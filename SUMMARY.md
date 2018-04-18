@@ -10,4 +10,5 @@
 * [OS Agnostic](os-agnostic/README.md)
   * [Python](os-agnostic/python.md)
   * [Erlang](os-agnostic/erlang.md)
+* [Data Exfiltration](data-exfiltration.md)
 
