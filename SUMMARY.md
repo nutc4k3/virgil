@@ -16,4 +16,5 @@
   * [Erlang](os-agnostic/erlang.md)
   * [Oracle Databases](os-agnostic/oracle-databases.md)
 * [Data Exfiltration](data-exfiltration.md)
+* [Pivoting](pivoting.md)
 
