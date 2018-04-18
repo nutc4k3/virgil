@@ -1,6 +1,11 @@
 # MS-SQL Databases
 
+MS-SQL or SQL Server is Microsoft's offering of an SQL Database.  The syntax and model is quite similar to standard SQL with the benefit of being able to hook directly into offerings such as Windows Active Directory and interface with the Windows operating system.  It is some of these features however that can allow us to get a strong foothold on a device.
+
 ## Connecting
+There are multiple ways to interface with an MS-SQL server.
+
+If on Linux then I'd recommend using sqsh
 
 ```bash
 sqsh -S 192.168.0.6 -U sa
@@ -37,7 +42,8 @@ Configuration option 'xp_cmdshell' changed from 0 to 1. Run the RECONFIGURE stat
 
 ## Server Links
 
-The best reference for exploiting server links is [SQL Server – Link… Link… Link… and Shell: How to Hack Database Links in SQL Server!](https://blog.netspi.com/how-to-hack-database-links-in-sql-server/) They're not hard to pull off and can allow you to escalate your permissions quite easily. However, do note that you should absolutely use rpc\_out if it's enabled.
+T
+he best reference for exploiting server links is [SQL Server – Link… Link… Link… and Shell: How to Hack Database Links in SQL Server!](https://blog.netspi.com/how-to-hack-database-links-in-sql-server/) They're not hard to pull off and can allow you to escalate your permissions quite easily. However, do note that you should absolutely use rpc\_out if it's enabled.
 
 Since OpenQuery can only satisfy user queries, stored procedures or user creation is not possible and makes your escalation path much more difficult.
 
