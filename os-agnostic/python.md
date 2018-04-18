@@ -19,9 +19,13 @@ During pickle deserialization, it is possible to create a situation where arbitr
 ```python
 import subprocess
 class BadPickle(object):
-def __reduce__(self):
-return (subprocess.check_output, (chars,))
-
+    def __reduce__(self):
+        return (subprocess.check_output, (chars,))
 print cPickle.dumps(BadPickle())
 ```
+
+**Further Reading**   
+https://blog.nelhage.com/2011/03/exploiting-pickle/   
+https://sensepost.com/blog/2010/playing-with-python-pickle-%231/   
+https://dan.lousqui.fr/explaining-and-exploiting-deserialization-vulnerability-with-python-en.html
 
