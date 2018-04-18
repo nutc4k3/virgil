@@ -27,6 +27,16 @@ spawn(node@localhost, fun() -> io:format("~p~n", [os:cmd('/usr/bin/id')]) end).
 <6881.23434.8>
 ```
 
+**References**
+
+[https://insinuator.net/2017/10/erlang-distribution-rce-and-a-cookie-bruteforcer/](https://legacy.gitbook.com/book/reboare/booj-security/edit#)  
+[http://blog.listincomprehension.com/2010/03/spoofing-erlang-distribution-protocol.html](https://legacy.gitbook.com/book/reboare/booj-security/edit#)
+
+**Further Reading**
+
+[Who wants cookies?](https://blog.voltone.net/post/4)  
+[Unauthorized Erlang](https://blog.voltone.net/post/12)
+
 ## Node Poisoning
 
 Connecting to an Erlang cluster can potentially be dangerous. We've mentioned the dangers of arbitrary command execution on adjacent nodes, but this also extends to your workstation upon connecting to a cluster. In Alex Weber's Erlang's remsh is dangerous, we are given a method to compromise an active workstation connecting to a cluster.
@@ -114,3 +124,18 @@ drwxr-xr-x 2 root root 4096 Apr 10 01:39 .tmp_dir531002228620
 
 Whilst this may not be a particularly surprising result for Erlang developers, it does represent a quite frightening realization that a single node being compromised will indeed compromise the entire network. This is more making other security researchers aware that if they're attacking an Erlang node, to absolutely do it from a secure VM that has no potential to leak their personal data. A Docker contianer is ideal.
 
+**References**
+
+[Erlang's remsh is dangerous](https://www.broot.ca/erlang-remsh-is-dangerous)  
+[https://stackoverflow.com/questions/45057343/connect-erlang-nodes-on-docker](https://stackoverflow.com/questions/45057343/connect-erlang-nodes-on-docker)
+
+## Cookie Bruteforcing
+
+The code for cookie creation lies in [lib/kernel/src/auth.erl](https://github.com/erlang/otp/blob/master/lib/kernel/src/auth.erl).
+
+**Further Reading**
+
+[NCC Group - Erlang Security 101](https://www.nccgroup.trust/globalassets/our-research/uk/whitepapers/2014/erlang_security_101_v1-0.pdf)  
+[https://github.com/msantos/spoofed](https://github.com/msantos/spoofed)  
+[https://www.youtube.com/watch?v=42k70Y-yTYY](https://www.youtube.com/watch?v=42k70Y-yTYY)  
+[https://conference.hitb.org/hitbsecconf2017ams/materials/D2T4 - Don Bailey - Unauthorized Erlang.pdf](https://conference.hitb.org/hitbsecconf2017ams/materials/D2T4 - Don Bailey - Unauthorized Erlang.pdf)
