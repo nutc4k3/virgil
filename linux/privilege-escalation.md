@@ -97,6 +97,10 @@ tcpdump -ln -i eth0 -w /dev/null -W 1 -G 1 -z /tmp/.test -Z root
 :py os.system("/bin/bash")
 ```
 
+#### References
+
+[https://stackoverflow.com/questions/46897570/why-do-files-in-proc-self-end-up-being-owned-by-root-if-a-program-has-its-setui](https://stackoverflow.com/questions/46897570/why-do-files-in-proc-self-end-up-being-owned-by-root-if-a-program-has-its-setui)
+
 ## Cron Jobs
 
 Very simply, a cronjob is a task set on a timer, for example every 15 minutes or every 3rd day of the month. These tasks offer a whole avenue for exploitation as they are often quickly coded and can introduce all sorts of vulnerabilities.
