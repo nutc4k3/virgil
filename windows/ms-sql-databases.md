@@ -2,6 +2,13 @@
 
 MS-SQL or SQL Server is Microsoft's offering of an SQL Database. The syntax and model is quite similar to standard SQL with the benefit of being able to hook directly into offerings such as Windows Active Directory and interface with the Windows operating system. It is some of these features however that can allow us to get a strong foothold on a device.
 
+There's a lot of fantastic tools and resources designed specifically for dealing with MS-SQL:
+
+* [PowerUpSQL ](https://github.com/NetSPI/PowerUpSQL)- An enumeration and privilege escalation tool for MS-SQL in Powershell
+* [msdat ](https://github.com/quentinhardy/msdat)- Microsoft SQL Database attacking tool
+* [NetSPI Blog](https://blog.netspi.com/)
+* [MS-SQL Injection Cheat Sheet](http://pentestmonkey.net/cheat-sheet/sql-injection/mssql-sql-injection-cheat-sheet)
+
 ## Connecting
 
 There are multiple ways to interface with an MS-SQL server.  If on Linux then I'd recommend using [sqsh](https://sourceforge.net/projects/sqsh/), as it's simple and allows you to quickly create commands:
