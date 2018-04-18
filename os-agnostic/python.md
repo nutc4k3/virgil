@@ -10,17 +10,18 @@ In python 2, the input function worked in an interesting manner. It queried for 
 __import__('os').system('/bin/bash')
 ```
 
-In python 3 this was removed, and raw\_input from python 2 replaced it.
+In python 3 this was removed, and `raw_input` from python 2 replaced it, so this attack is no longer possible.
 
 ## Pickle Deserialization
 
-During pickle deserialization, it is possible to create a situation where arbitrary code is executed. This is because the reduce method defines how the object itself is de-serialized, and so will be executed when pickle.loads is called:
+During pickle deserialization, it is possible to create a situation where arbitrary code is executed. This is because the reduce method defines how the object itself is de-serialized, and so will be executed when pickle.loads is called.  The `BadPickle` class below, when pickle and loaded, will execute the chosen cmd.
 
 ```python
 import subprocess
+cmd = ['ls', '-la']
 class BadPickle(object):
     def __reduce__(self):
-        return (subprocess.check_output, (chars,))
+        return (subprocess.check_output, (cmd,))
 print cPickle.dumps(BadPickle())
 ```
 
