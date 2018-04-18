@@ -1,7 +1,3 @@
----
-description: Snagging Domain Accounts using SPN's
----
-
 # Kerberoast
 
 The kerberoast vulnerability assumes that the attacker has some foothold on the domain and has a low privileged domain account.

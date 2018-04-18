@@ -1,7 +1,3 @@
----
-description: Accessing Hidden Services and Networks
----
-
 # Pivoting
 
 ## Port Forwarding
