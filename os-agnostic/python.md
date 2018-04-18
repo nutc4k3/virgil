@@ -25,7 +25,7 @@ print cPickle.dumps(BadPickle())
 ```
 
 **Further Reading**   
-https://blog.nelhage.com/2011/03/exploiting-pickle/   
-https://sensepost.com/blog/2010/playing-with-python-pickle-%231/   
-https://dan.lousqui.fr/explaining-and-exploiting-deserialization-vulnerability-with-python-en.html
+[https://blog.nelhage.com/2011/03/exploiting-pickle/   
+](https://blog.nelhage.com/2011/03/exploiting-pickle/%20)[https://sensepost.com/blog/2010/playing-with-python-pickle-%231/   
+](https://sensepost.com/blog/2010/playing-with-python-pickle-%231/%20)[https://dan.lousqui.fr/explaining-and-exploiting-deserialization-vulnerability-with-python-en.html](https://dan.lousqui.fr/explaining-and-exploiting-deserialization-vulnerability-with-python-en.html)
 
