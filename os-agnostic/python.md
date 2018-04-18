@@ -4,7 +4,7 @@ Python is a language powering an extraordinary number of applications, but here 
 
 ## python2 input
 
-In python 2, the input function worked in an interesting manner. It queried for user input, executed the input given to it directly, allowing us to, for example, have an integer returned directly from the result of the function. However, this also allowed any arbitrary code to be injected. In cases where you have a python 2 style input mechanism, simply write the following:
+In python 2, the input function worked in an interesting manner. It queried for user input, executed the input given to it directly, allowing us to, for example, have an integer returned directly from the result of the function. However, this also allowed any arbitrary code to be injected. In cases where you have a python 2 style input mechanism, simply write the following:
 
 ```python
 __import__('os').system('/bin/bash')
