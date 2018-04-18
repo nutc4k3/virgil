@@ -15,9 +15,15 @@ ssh -L <localport>:<remotehost>:<remoteport> username@remotehost    # local port
 ssh -R <remoteport>:<localhost>:<localport> username@remotehost     # reverse portfwd
 ```
 
+
+
 ## References
 
-[https://pentest.blog/explore-hidden-networks-with-double-pivoting/](https://pentest.blog/explore-hidden-networks-with-double-pivoting/)
+[https://pentest.blog/explore-hidden-networks-with-double-pivoting/](https://pentest.blog/explore-hidden-networks-with-double-pivoting/)  
+[https://github.com/apenwarr/sshuttle](https://github.com/apenwarr/sshuttle)  
+[https://www.offensive-security.com/metasploit-unleashed/portfwd/](https://www.offensive-security.com/metasploit-unleashed/portfwd/)
+
+
 
 
 
