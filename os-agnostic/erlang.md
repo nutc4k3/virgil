@@ -1,5 +1,7 @@
 # Erlang
 
+> “My name is Legion,” he replied, “for we are many.”
+
 ## Authentication Cookies
 
 Authentication between Erlang nodes is rather unique to anything I've seen elsewhere, and it all happens through the magic of cookies. The [documentation ](http://erlang.org/doc/reference_manual/distributed.html)sums this up well:
