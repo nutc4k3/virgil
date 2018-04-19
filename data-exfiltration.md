@@ -2,6 +2,8 @@
 
 ## ICMP
 
+When talking about data exfiltration, ICMP might be the most classic as it is traditionally not filtered to allow 
+
 ### Extracting a File
 
 By sending ping packets from our server, with the start marked by `^BOF` and the end marked by `EOF` , we can set up an icmplistener as below which decodes the data packets and then writes them to our file. This isn't as universal as metasploit's listener, but it servers as a quick and dirty poc if all you're looking to extract is a single file.
