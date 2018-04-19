@@ -17,4 +17,5 @@
   * [Oracle Databases](os-agnostic/oracle-databases.md)
 * [Pivoting](pivoting.md)
 * [Data Exfiltration](data-exfiltration.md)
+* [Shells](shells.md)
 
