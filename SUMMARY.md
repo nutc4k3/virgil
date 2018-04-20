@@ -19,6 +19,7 @@
 * [Data Exfiltration](data-exfiltration.md)
 * [Shells](shells.md)
 * Binary Exploitation
-  * glibc Heap
+  * [glibc Heap](binary-exploitation/glibc-heap/README.md)
     * [First-Fit Behaviour](binary-exploitation/glibc-heap/first-fit-behaviour.md)
+    * [Null-Byte Overflow](binary-exploitation/glibc-heap/null-byte-overflow.md)
 
