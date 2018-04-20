@@ -18,4 +18,7 @@
 * [Pivoting](pivoting.md)
 * [Data Exfiltration](data-exfiltration.md)
 * [Shells](shells.md)
+* Binary Exploitation
+  * glibc Heap
+    * [First-Fit Behaviour](binary-exploitation/glibc-heap/first-fit-behaviour.md)
 
