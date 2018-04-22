@@ -16,7 +16,7 @@
   * [Erlang](os-agnostic/erlang.md)
   * [Oracle Databases](os-agnostic/oracle-databases.md)
 * Web Applications
-  * PHP
+  * [PHP](web-applications/php.md)
 * [Pivoting](pivoting.md)
 * [Data Exfiltration](data-exfiltration.md)
 * [Shells](shells.md)
