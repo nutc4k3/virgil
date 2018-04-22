@@ -20,8 +20,7 @@
   * [PHP](web-applications/php.md)
 * [Pivoting](pivoting.md)
 * [Data Exfiltration](data-exfiltration.md)
-* [Shells](shells/README.md)
-  * [Webshells](shells/webshells.md)
+* [Shells](shells.md)
 * Binary Exploitation
   * [glibc Heap](binary-exploitation/glibc-heap/README.md)
     * [First-Fit Behaviour](binary-exploitation/glibc-heap/first-fit-behaviour.md)
