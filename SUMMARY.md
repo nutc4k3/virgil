@@ -27,5 +27,6 @@
     * [Unlink Exploit](binary-exploitation/glibc-heap/unlink-exploit.md)
     * [Null-Byte Overflow](binary-exploitation/glibc-heap/null-byte-overflow.md)
   * [Linux Stack Based](binary-exploitation/linux-stack-based/README.md)
+    * Stack Canaries
     * [Blind ROP](binary-exploitation/linux-stack-based/blind-rop.md)
 
