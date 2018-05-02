@@ -24,6 +24,7 @@
 * Binary Exploitation
   * [glibc Heap](binary-exploitation/glibc-heap/README.md)
     * [First-Fit Behaviour](binary-exploitation/glibc-heap/first-fit-behaviour.md)
+    * [Double Free](binary-exploitation/glibc-heap/double-free.md)
     * [Unlink Exploit](binary-exploitation/glibc-heap/unlink-exploit.md)
     * [Null-Byte Overflow](binary-exploitation/glibc-heap/null-byte-overflow.md)
   * [Linux Stack Based](binary-exploitation/linux-stack-based/README.md)
