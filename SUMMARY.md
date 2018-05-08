@@ -28,7 +28,10 @@
     * [Unlink Exploit](binary-exploitation/glibc-heap/unlink-exploit.md)
     * [Null-Byte Overflow](binary-exploitation/glibc-heap/null-byte-overflow.md)
   * [Linux Stack Based](binary-exploitation/linux-stack-based/README.md)
-    * [Chapter 1 - Simple Overflows](binary-exploitation/linux-stack-based/1.-simple-overflows.md)
+    * [Simple Overflows](binary-exploitation/linux-stack-based/1.-simple-overflows.md)
+    * GNU Debugger Usage
+    * Data Execution Prevention/NX
     * [Stack Canaries](binary-exploitation/linux-stack-based/stack-canaries.md)
+    * [Address Space Layout Randomisation](binary-exploitation/linux-stack-based/address-space-layout-randomisation.md)
     * [Blind ROP](binary-exploitation/linux-stack-based/blind-rop.md)
 
