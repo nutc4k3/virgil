@@ -4,12 +4,12 @@
 
 * [https://www.perspectiverisk.com/mssql-practical-injection-cheat-sheet/](https://www.perspectiverisk.com/mssql-practical-injection-cheat-sheet/)
 * [http://pentestmonkey.net/cheat-sheet/sql-injection/mssql-sql-injection-cheat-sheet](http://pentestmonkey.net/cheat-sheet/sql-injection/mssql-sql-injection-cheat-sheet)
-
-## Blind SQL Injection
-
-### Error Based Injection
+* 
+## Error Based SQL Injection
 
 [https://www.exploit-db.com/docs/english/44348-error-based-sql-injection-in-order-by-clause-\(mssql\).pdf](https://www.exploit-db.com/docs/english/44348-error-based-sql-injection-in-order-by-clause-%28mssql%29.pdf)
+
+## Blind SQL Injection
 
 ### Boolean Based Blind
 
