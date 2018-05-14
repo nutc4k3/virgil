@@ -1,6 +1,9 @@
 # MS-SQL Injection
 
+## Cheatsheets
 
+* [https://www.perspectiverisk.com/mssql-practical-injection-cheat-sheet/](https://www.perspectiverisk.com/mssql-practical-injection-cheat-sheet/)
+* [http://pentestmonkey.net/cheat-sheet/sql-injection/mssql-sql-injection-cheat-sheet](http://pentestmonkey.net/cheat-sheet/sql-injection/mssql-sql-injection-cheat-sheet)
 
 ## Blind SQL Injection
 
