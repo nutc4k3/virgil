@@ -3,7 +3,8 @@
 * [Virgil](README.md)
 * Windows
   * Privilege Escalation
-  * [MS-SQL Databases](windows/ms-sql-databases.md)
+  * [MS-SQL Databases](windows/ms-sql-databases/README.md)
+    * [MS-SQL Injection](windows/ms-sql-databases/ms-sql-injection.md)
 * [Windows Active Directory](windows-active-directory/README.md)
   * [Privilege Escalation](windows-active-directory/privilege-escalation/README.md)
     * [Kerberoast](windows-active-directory/privilege-escalation/kerberoast.md)
@@ -18,6 +19,7 @@
   * [Containerisation](os-agnostic/containerisation.md)
 * Web Applications
   * [PHP](web-applications/php.md)
+  * [SQL Injection](web-applications/sql-injection.md)
 * [Pivoting](pivoting.md)
 * [Data Exfiltration](data-exfiltration.md)
 * [Shells](shells.md)
