@@ -9,6 +9,13 @@
 
 [https://www.exploit-db.com/docs/english/44348-error-based-sql-injection-in-order-by-clause-\(mssql\).pdf](https://www.exploit-db.com/docs/english/44348-error-based-sql-injection-in-order-by-clause-%28mssql%29.pdf)
 
+## Stacked Queries
+
+```text
+CREATE TABLE exfil (line varchar(8000));
+
+```
+
 ## Blind SQL Injection
 
 ### Boolean Based Blind
