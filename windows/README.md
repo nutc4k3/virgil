@@ -10,8 +10,6 @@ These are also disturbingly common in CTF's through the security via obscurity, 
 dir /R
 ```
 
-To view 
-
 ### Powershell
 
 ```bash
