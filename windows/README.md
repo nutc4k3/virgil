@@ -1,5 +1,9 @@
 # Windows
 
+## Windows Registry
+
+
+
 ## Alternate Data Streams
 
 This is more a  feature of the NTFS file system than it is a Windows feature, but it's important to understand from both a red-team and blue-team perspective.  
