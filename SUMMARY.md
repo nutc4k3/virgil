@@ -20,7 +20,7 @@
   * [Erlang](os-agnostic/erlang.md)
   * [Oracle Databases](os-agnostic/oracle-databases.md)
   * [Containerisation](os-agnostic/containerisation.md)
-* Web Applications
+* [Web Applications](web-applications/README.md)
   * [PHP](web-applications/php.md)
   * [SQL Injection](web-applications/sql-injection.md)
 * [Pivoting](pivoting.md)
