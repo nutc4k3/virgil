@@ -20,3 +20,9 @@ wfuzz -c  -Z -z file,/root/namelist.txt --hh 0,560 -H "Host: FUZZ.app.com" http:
 wfuzz -c -z file,./passwords.txt -d 'user=admin&pass=FUZZ' --hh 45 http://192.168.0.75:8080/login.php 
 ```
 
+### thc-hydra
+
+If you have to, use [hydra](https://github.com/vanhauser-thc/thc-hydra).  The query syntax is archaic as hell, but it's almost a standard at this point so it's always worth having it in your toolkit.  Modules include options for everything from web login forms to SSH.
+
+
+
