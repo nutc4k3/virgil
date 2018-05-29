@@ -8,21 +8,26 @@ We can perform local port forwards if we have SSH access to the machine we want 
 
 ```text
 ssh -L <localport>:<remotehost>:<remoteport> username@remotehost    # local portfwd
-ssh -R <remoteport>:<localhost>:<localport> username@remotehost     # reverse portfwd
+ssh -R <remoteport>:<remotehost>:<localport> username@remotehost     # reverse portfwd
 ```
 
-These can also be used to bind locally if an inbound firewall is blocked.  The following take advantage of netcat and socat to achieve this.
+On Windows the same is achieved with [plink.exe](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).  
+
+```text
+plink.exe -L <localport>:<remotehost>:<remoteport> username@remotehost
+plink.exe -R <remoteport>:<remotehost>:<localport> username@remotehost
+```
+
+These can also be used to bind locally if an inbound firewall is blocked.  We can also use netcat and socat to achieve this:
 
 ```bash
 socat TCP-LISTEN:8080,fork,reuseaddr TCP:127.0.0.1:80
 nc -l -p 8080 -c "nc 127.0.0.1 80"
 ```
 
-## Tunelling 
-
 ### sshuttle
 
-If you're in a situation where you have access to a device which you can connect to via SSH, and want to pivot deeper into the network painlessly, then [sshuttle ](https://github.com/sshuttle/sshuttle)is the tool for you.  This was indispensable during my OSCP course, as it allows you to forgo having to forward a myriad of ports, and allows you to just SSH to a device and will automatically set up a route on your local Kali.
+If you're in a situation where you have access to a device which you can connect to via SSH, and want to pivot deeper into the network painlessly, then [sshuttle ](https://github.com/sshuttle/sshuttle)is the tool for you.  This was indispensable during my OSCP course, as it allows you to forgo having to forward a myriad of ports, as you just SSH to a device and will automatically set up a route on your local Kali.
 
 ## References
 
