@@ -50,6 +50,14 @@ Configuration option 'xp_cmdshell' changed from 0 to 1. Run the RECONFIGURE stat
 2> go
 ```
 
+## Python Code Execution
+
+In some cases python code execution is available as part of an SQL transaction.  This obviously allows arbitary code execution, but the python interpreter is not always as locked down as xp\_cmdshell, which may allow further exploitation and privilege escalation.
+
+#### References
+
+[The Power of Python and SQL Server 2017](https://www.red-gate.com/simple-talk/sql/sql-development/power-python-sql-server-2017/)
+
 ## Server Links
 
 The best reference for exploiting server links is [SQL Server – Link… Link… Link… and Shell: How to Hack Database Links in SQL Server!](https://blog.netspi.com/how-to-hack-database-links-in-sql-server/) They're not hard to pull off and can allow you to escalate your permissions quite easily. However, do note that you should absolutely use rpc\_out if it's enabled.
