@@ -10,7 +10,11 @@ Administrator:500:REDACTED:REDACTED:::
 *disabled* SUPPORT_388945a0:1002:REDACTED:REDACTED:::
 ```
 
-## MOF
+## MOF Files
+
+These are useful in the event of an arbitrary read/write on the file system as a SYSTEM User.  For this to work the OS must be XP or lower.  In effect, a MOF file written to `%SystemRoot%\System32\wbem\mof\`, will be compiled automatically by the OS, and allows arbitrary code execution.  A good overview of MOF files themselves is [Playing with MOF files on Windows, for fun & profit](http://poppopret.blogspot.com/2011/09/playing-with-mof-files-on-windows-for.html).
+
+Below is a python version of metasploit's [wbemexec.rb](https://github.com/rapid7/metasploit-framework/blob/master/lib/msf/core/exploit/wbemexec.rb) for executing a file in the System32 folder.
 
 ```python
 def genMof(mofName, exe):
@@ -82,6 +86,12 @@ instance of MyClass{class} as $MyClass
     mof = sub('{mofname}', mofName, mof)
     return mof
 ```
+
+#### References
+
+[Playing with MOF files on Windows, for fun & profit](http://poppopret.blogspot.com/2011/09/playing-with-mof-files-on-windows-for.html)  
+[How to use WbemExec for a write privilege attack on Windows](https://github.com/rapid7/metasploit-framework/wiki/How-to-use-WbemExec-for-a-write-privilege-attack-on-Windows)  
+[https://github.com/rapid7/metasploit-framework/blob/master/lib/msf/core/exploit/wbemexec.rb](https://github.com/rapid7/metasploit-framework/blob/master/lib/msf/core/exploit/wbemexec.rb)
 
 
 
