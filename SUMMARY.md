@@ -2,7 +2,6 @@
 
 * [Virgil](README.md)
 * [Windows](windows/README.md)
-  * [Enumeration](windows/enumeration.md)
   * [Privilege Escalation](windows/privilege-escalation.md)
   * [MS-SQL Databases](windows/ms-sql-databases/README.md)
     * [MS-SQL Injection](windows/ms-sql-databases/ms-sql-injection.md)

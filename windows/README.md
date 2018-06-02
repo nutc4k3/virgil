@@ -2,7 +2,15 @@
 
 ## Windows Registry
 
+## Powershell
 
+#### Executing a file without an extension
+
+```text
+powershell - < ps1file
+```
+
+[http://pwnwiki.io/\#!presence/windows/blind.md](http://pwnwiki.io/#!presence/windows/blind.md)
 
 ## Alternate Data Streams
 

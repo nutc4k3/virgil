@@ -1,5 +1,21 @@
 # Privilege Escalation
 
+## Applocker
+
+> AppLocker advances the app control features and functionality of Software Restriction Policies. AppLocker contains new capabilities and extensions that allow you to create rules to allow or deny apps from running based on unique identities of files and to specify which users or groups can run those apps.
+
+Source: [What Is AppLocker?](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/what-is-applocker)
+
+Despite the power this gives the Administrator in locking down what users can and can't execute, there are a disturbing number of ways to bypass this.  [Ultimate Applocker Bypass List](https://github.com/api0cradle/UltimateAppLockerByPassList) aims to record most of them.
+
+## Process Migration
+
+There can be a number of valid reasons to migrate processes, notably from 32-bit to 64-bit.  The reason is that certain exploits can only be executed from a 64-bit process, or there can be a want to view the 64-bit registry.
+
+```bash
+%SystemRoot%\sysnative\WindowsPowerShell\v1.0\powershell.exe
+```
+
 ## SAM File
 
 ```bash
