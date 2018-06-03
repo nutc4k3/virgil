@@ -26,6 +26,8 @@ Source: [What Is AppLocker?](https://docs.microsoft.com/en-us/windows/security/t
 
 Despite the power this gives the Administrator in locking down what users can and can't execute, there are a disturbing number of ways to bypass this.  [Ultimate Applocker Bypass List](https://github.com/api0cradle/UltimateAppLockerByPassList) aims to record most of them.
 
+[GreatSCT ](https://github.com/GreatSCT/GreatSCT)can also be used to generate payloads to bypass these.
+
 ### MSBuild
 
 We can use MSBuild to execute arbitrary shellcode. The Cn33liz [MSBuildShell ](https://github.com/Cn33liz/MSBuildShell)is one such example. To compile a `csproj` file we use:
