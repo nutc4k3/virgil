@@ -4,8 +4,6 @@
 
 ## Powershell
 
-Powershell was Windows' answer to improving the scripting solution within Windows.  It's incredibly powerful for both Sysadmins as well as attackers.  Here I will include a number of snippets I've found useful for attacking devices with.
-
 #### Executing a script without an extension
 
 ```text
