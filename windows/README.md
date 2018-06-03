@@ -4,6 +4,8 @@
 
 ## Powershell
 
+Powershell was Windows' answer to improving the scripting solution within Windows.  It's incredibly powerful for both Sysadmins as well as attackers.  Here I will include a number of snippets I've found useful for attacking devices with.
+
 #### Executing a script without an extension
 
 ```text
@@ -28,11 +30,13 @@ Despite the power this gives the Administrator in locking down what users can an
 
 ### MSBuild
 
-The Cn33liz [MSBuildShell ](https://github.com/Cn33liz/MSBuildShell)is one such example.
+We can use MSBuild to execute arbitrary shellcode. The Cn33liz [MSBuildShell ](https://github.com/Cn33liz/MSBuildShell)is one such example. To compile a `csproj` file we use:
 
 ```text
 C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe test.csproj
 ```
+
+An example csproj file to include shellcode within is:
 
 ```markup
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

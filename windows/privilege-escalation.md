@@ -4,6 +4,8 @@
 
 There can be a number of valid reasons to migrate processes, notably from 32-bit to 64-bit.  The reason is that certain exploits can only be executed from a 64-bit process, or there can be a want to view the 64-bit registry.
 
+#### Launch x64 Powershell
+
 ```bash
 %SystemRoot%\sysnative\WindowsPowerShell\v1.0\powershell.exe
 ```
@@ -21,6 +23,8 @@ Administrator:500:REDACTED:REDACTED:::
 ## MOF Files
 
 These are useful in the event of an arbitrary read/write on the file system as a SYSTEM User.  For this to work the OS must be XP or lower.  In effect, a MOF file written to `%SystemRoot%\System32\wbem\mof\`, will be compiled automatically by the OS, and allows arbitrary code execution.  A good overview of MOF files themselves is [Playing with MOF files on Windows, for fun & profit](http://poppopret.blogspot.com/2011/09/playing-with-mof-files-on-windows-for.html).
+
+To check for compilation success/failure, look for the file within `%SystemRoot%\System32\wbem\mof\good\`and `%SystemRoot%\System32\wbem\mof\bad\` respectively.
 
 Below is a python version of metasploit's [wbemexec.rb](https://github.com/rapid7/metasploit-framework/blob/master/lib/msf/core/exploit/wbemexec.rb) for executing a file in the System32 folder.
 
