@@ -13,7 +13,7 @@
     * [Silver & Golden Tickets](windows-active-directory/privilege-escalation/silver-and-golden-tickets.md)
 * [Linux](linux/README.md)
   * [Privilege Escalation](linux/privilege-escalation.md)
-  * [Persistence](linux/persistence.md)
+  * [Post Exploitation](linux/persistence.md)
   * [VNC](linux/vnc.md)
 * [OS Agnostic](os-agnostic/README.md)
   * [Python](os-agnostic/python.md)
