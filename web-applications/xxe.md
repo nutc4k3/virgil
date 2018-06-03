@@ -10,5 +10,5 @@
 </root>
 ```
 
-Ensure that regardless of the format of your xml files, that there is only one root node.  Several parsers will refuse to validate the file and will error in the event of multiple root nodes.  As with all exploits, this isn't always the case, but it can help in some situations.
+Ensure that regardless of the format of your xml files, that there is only one root node.  Several parsers will refuse to validate the file and will error in the event of multiple root nodes.  As with all exploits, this isn't always the case, but if your exploit fails, this would be a good thing to ensure.
 
