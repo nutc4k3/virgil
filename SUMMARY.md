@@ -27,18 +27,19 @@
 * [Pivoting/Tunelling](pivoting.md)
 * [Data Exfiltration](data-exfiltration.md)
 * [Shells](shells.md)
-* Binary Exploitation
+* [Binary Exploitation](binary-exploitation/README.md)
   * [glibc Heap](binary-exploitation/glibc-heap/README.md)
     * [First-Fit Behaviour](binary-exploitation/glibc-heap/first-fit-behaviour.md)
-    * Fastbin Duplication
+    * [Fastbin Duplication](binary-exploitation/glibc-heap/fastbin-duplication.md)
     * [Unlink Exploit](binary-exploitation/glibc-heap/unlink-exploit.md)
     * [Null-Byte Overflow](binary-exploitation/glibc-heap/null-byte-overflow.md)
   * [Linux Stack Based](binary-exploitation/linux-stack-based/README.md)
     * [Simple Overflows](binary-exploitation/linux-stack-based/1.-simple-overflows.md)
-    * GNU Debugger Usage
+    * [GNU Debugger Usage](binary-exploitation/linux-stack-based/chapter-2-gdb.md)
     * [Format String Exploits](binary-exploitation/linux-stack-based/format-string-exploits.md)
     * [Return Oriented Programming](binary-exploitation/linux-stack-based/return-oriented-programming.md)
     * [Stack Canaries](binary-exploitation/linux-stack-based/stack-canaries.md)
     * [Address Space Layout Randomisation](binary-exploitation/linux-stack-based/address-space-layout-randomisation.md)
     * [Blind ROP](binary-exploitation/linux-stack-based/blind-rop.md)
+* [Infrastructure](infrastructure.md)
 
