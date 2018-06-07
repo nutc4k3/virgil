@@ -42,4 +42,5 @@
     * [Address Space Layout Randomisation](binary-exploitation/linux-stack-based/address-space-layout-randomisation.md)
     * [Blind ROP](binary-exploitation/linux-stack-based/blind-rop.md)
 * [Infrastructure](infrastructure.md)
+* [Password Cracking](password-cracking.md)
 
