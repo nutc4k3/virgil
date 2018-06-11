@@ -54,6 +54,11 @@ Configuration option 'xp_cmdshell' changed from 0 to 1. Run the RECONFIGURE stat
 
 In some cases python code execution is available as part of an SQL transaction.  This obviously allows arbitary code execution, but the python interpreter is not always as locked down as xp\_cmdshell, which may allow further exploitation and privilege escalation.
 
+```sql
+EXEC sp_execute_external_script @language = N'Python', @script = N'import os
+print os.system("ls -la")'
+```
+
 #### References
 
 [The Power of Python and SQL Server 2017](https://www.red-gate.com/simple-talk/sql/sql-development/power-python-sql-server-2017/)
