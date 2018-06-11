@@ -12,6 +12,8 @@
 
 Ensure that regardless of the format of your xml files, that there is only one root node.  Several parsers will refuse to validate the file and will error in the event of multiple root nodes.  As with all exploits, this isn't always the case, but if your exploit fails, this would be a good thing to ensure.
 
+These can be applicable for XML endpoints, of course, but also JSON endpoints due to legacy code.  The article [Playing with Content-Type – XXE on JSON Endpoints](https://blog.netspi.com/playing-content-type-xxe-json-endpoints/) covers this very well.
+
 ## Out-of-band XXE
 
 ```markup
@@ -49,6 +51,7 @@ zlib.decompress(base64.b64decode(req), -15)
 
 ## References
 
+[Playing with Content-Type – XXE on JSON Endpoints](https://blog.netspi.com/playing-content-type-xxe-json-endpoints/)  
 [Acunetix - Out-of-band XML External Entity \(OOB-XXE\)](https://www.acunetix.com/blog/articles/band-xml-external-entity-oob-xxe/)  
 [XXE Payloads](https://gist.github.com/staaldraad/01415b990939494879b4)  
 [PayloadAllTheThings - XXE](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XXE%20injections)  
