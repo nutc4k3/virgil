@@ -72,5 +72,7 @@ The topic of python jail shells risks becoming very weighty due to the sheer mas
 
 [PlaidCTF - PyJail with Character Restrictions](http://wapiflapi.github.io/2013/04/22/plaidctf-pyjail-story-of-pythons-escape/)
 
+## Further Reading
 
+[Vlog \#010: Dumping interpreter's history](https://www.youtube.com/watch?v=u9hQEfhiTj4)
 
