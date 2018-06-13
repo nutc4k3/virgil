@@ -16,6 +16,8 @@ Write-UserAddMSI
 
 Metasploit has [exploit/windows/local/always\_install\_elevated](https://www.rapid7.com/db/modules/exploit/windows/local/always_install_elevated) which you can use in a similar manner.
 
+**References**
+
 [AlwaysInstallElevated \(Windows\)](https://msdn.microsoft.com/en-us/library/windows/desktop/aa367561%28v=vs.85%29.aspx)  
 [pentestlab - AlwaysInstallElevated](https://pentestlab.blog/2017/02/28/always-install-elevated/)
 
