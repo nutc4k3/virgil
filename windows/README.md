@@ -2,6 +2,12 @@
 
 ## Windows Registry
 
+> The registry in 64-bit versions of Windows is divided into 32-bit and 64-bit keys. Many of the 32-bit keys have the same names as their 64-bit counterparts, and vice versa.
+
+From [How to view the system registry by using 64-bit versions of Windows](https://support.microsoft.com/en-gb/help/305097/how-to-view-the-system-registry-by-using-64-bit-versions-of-windows).
+
+If operating in a 32-bit process under a 64-bit system you will only be able to view the 32-bit registry.  For this reason, ensure all enumeration of the registry ocurrs from a 64-bit process.
+
 ## File Transfers
 
 ### powershell
