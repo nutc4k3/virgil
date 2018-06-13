@@ -1,15 +1,5 @@
 # Privilege Escalation
 
-## Process Migration
-
-There can be a number of valid reasons to migrate processes, notably from 32-bit to 64-bit.  The reason is that certain exploits can only be executed from a 64-bit process, or there can be a want to view the 64-bit registry.
-
-#### Launch x64 Powershell
-
-```bash
-%SystemRoot%\sysnative\WindowsPowerShell\v1.0\powershell.exe
-```
-
 ## SAM File
 
 ```bash

@@ -8,6 +8,16 @@ From [How to view the system registry by using 64-bit versions of Windows](https
 
 If operating in a 32-bit process under a 64-bit system you will only be able to view the 32-bit registry.  For this reason, ensure all enumeration of the registry ocurrs from a 64-bit process.
 
+## Process Migration
+
+There can be a number of valid reasons to migrate processes, notably from 32-bit to 64-bit.  The reason is that certain exploits can only be executed from a 64-bit process, or there can be a want to view the 64-bit registry.
+
+#### Launch x64 Powershell
+
+```bash
+%SystemRoot%\sysnative\WindowsPowerShell\v1.0\powershell.exe
+```
+
 ## File Transfers
 
 ### powershell
