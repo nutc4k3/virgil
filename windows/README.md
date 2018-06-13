@@ -104,9 +104,7 @@ An example csproj file to include shellcode within is:
 
 ### Attack Surface Reduction
 
-```text
-https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/enable-attack-surface-reduction
-```
+​[https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/enable-attack-surface-reduction](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/enable-attack-surface-reduction)
 
 ## Alternate Data Streams
 
