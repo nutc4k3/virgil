@@ -37,7 +37,7 @@
     * [Unlink Exploit](binary-exploitation/glibc-heap/unlink-exploit.md)
     * [Null-Byte Overflow](binary-exploitation/glibc-heap/null-byte-overflow.md)
   * [Linux Stack Based](binary-exploitation/linux-stack-based/README.md)
-    * [Simple Overflows](binary-exploitation/linux-stack-based/1.-simple-overflows.md)
+    * [Binary Protections](binary-exploitation/linux-stack-based/binary-protections.md)
     * [GNU Debugger Usage](binary-exploitation/linux-stack-based/chapter-2-gdb.md)
     * [Return Oriented Programming](binary-exploitation/linux-stack-based/return-oriented-programming.md)
     * [Stack Canaries](binary-exploitation/linux-stack-based/stack-canaries.md)
