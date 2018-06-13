@@ -102,6 +102,8 @@ An example csproj file to include shellcode within is:
 
 ## Windows Defender
 
+Defender can be quite annoying when dealing with attacking remote windows systems.  Fortunately it's not too difficult to evade but it's always good to be aware of how to deal with it.  We can set a lot of the Windows Defender parameters with [Set-MpPreference](https://docs.microsoft.com/en-us/powershell/module/defender/set-mppreference?view=win10-ps).  To disable it use`Set-MpPreference -DisableRealtimeMonitoring $true`.  It's recommended to re-enable it after you're done.
+
 ### Attack Surface Reduction
 
 ​[https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/enable-attack-surface-reduction](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/enable-attack-surface-reduction)
