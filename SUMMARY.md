@@ -36,7 +36,7 @@
     * [Fastbin Duplication](binary-exploitation/glibc-heap/fastbin-duplication.md)
     * [Unlink Exploit](binary-exploitation/glibc-heap/unlink-exploit.md)
     * [Null-Byte Overflow](binary-exploitation/glibc-heap/null-byte-overflow.md)
-  * [Linux Stack Based](binary-exploitation/linux-stack-based/README.md)
+  * [Stack Based](binary-exploitation/linux-stack-based/README.md)
     * [Binary Protections](binary-exploitation/linux-stack-based/binary-protections.md)
     * [Return Oriented Programming](binary-exploitation/linux-stack-based/return-oriented-programming.md)
     * [Blind ROP](binary-exploitation/linux-stack-based/blind-rop.md)
