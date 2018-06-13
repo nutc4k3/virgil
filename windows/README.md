@@ -100,6 +100,14 @@ An example csproj file to include shellcode within is:
 </Project>
 ```
 
+## Windows Defender
+
+### Attack Surface Reduction
+
+```text
+https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/enable-attack-surface-reduction
+```
+
 ## Alternate Data Streams
 
 This is more a  feature of the NTFS file system than it is a Windows feature, but it's important to understand from both a red-team and blue-team perspective.  
