@@ -5,6 +5,7 @@
   * [FileSystem](windows/filesystem.md)
   * [Powershell](windows/powershell.md)
   * [Privilege Escalation](windows/privilege-escalation.md)
+  * [AntiVirus Bypass](windows/antivirus-bypass.md)
   * [MS-SQL Databases](windows/ms-sql-databases/README.md)
     * [MS-SQL Injection](windows/ms-sql-databases/ms-sql-injection.md)
 * [Windows Active Directory](windows-active-directory/README.md)
