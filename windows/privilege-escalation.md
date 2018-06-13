@@ -1,5 +1,24 @@
 # Privilege Escalation
 
+## AlwaysInstallElevated
+
+```text
+reg query HKLM\SOFTWARE\Policies\Microsoft\Windows\Installer\AlwaysInstallElevated
+reg query HKCU\SOFTWARE\Policies\Microsoft\Windows\Installer\AlwaysInstallElevated
+```
+
+[PowerSploit](https://github.com/PowerShellMafia/PowerSploit/blob/c7985c9bc31e92bb6243c177d7d1d7e68b6f1816/Privesc/README.md) contains a few helper functions to make exploiting this easy.
+
+```text
+Get-RegistryAlwaysInstallElevated
+Write-UserAddMSI 
+```
+
+Metasploit has [exploit/windows/local/always\_install\_elevated](https://www.rapid7.com/db/modules/exploit/windows/local/always_install_elevated) which you can use in a similar manner.
+
+[AlwaysInstallElevated \(Windows\)](https://msdn.microsoft.com/en-us/library/windows/desktop/aa367561%28v=vs.85%29.aspx)  
+[pentestlab - AlwaysInstallElevated](https://pentestlab.blog/2017/02/28/always-install-elevated/)
+
 ## SAM File
 
 ```bash
