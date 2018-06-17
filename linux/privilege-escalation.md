@@ -15,6 +15,12 @@ It also can't hurt to double-check by going through the following guides:
 
 Put that c0w down and let's see how we can exploit the low hanging fruit.
 
+## Improper File Permissions
+
+There are quite a few files on a Linux operating system that are locked down to only be readable or writeable by the root user.  If however, the permissions on these files have been modified to let us access them, it's possible to use them to escalate our permissions.
+
+If the user can modify the `/etc/passwd` file they can set the password of any user, including the root user.  If they can access to the `/etc/shadow` file, they can dump the hashes of each user and use them for offline password cracking, or again change the password of any user.
+
 ## SUID Applications and Sudo
 
 The holy grail of Linux Privilege Escalation. This section will describe two attack vectors that are effectively the same, and that is of Linux applications running with elevated privileges. These can either be via sudo or the [SUID/GUID](https://people.eecs.berkeley.edu/~daw/papers/setuid-usenix02.pdf) bit, but in effect it's about taking an application that is running as a privileged user and performing code execution.
