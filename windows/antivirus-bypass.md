@@ -2,6 +2,12 @@
 
 So we've compromised a host but AV is preventing us from doing much interesting.  Let's work out how to evade it.
 
+To see what AV you're working with use:
+
+```bash
+ wmic.exe /Node:localhost /Namespace:\\root\SecurityCenter2 Path AntiVirusProduct Get displayName /Format:List
+```
+
 ## shikata\_ga\_nai
 
 Perhaps the least effective of all these methods is the shikata\_ga\_nai encoding within the msfvenom payload generator.  This wasn't designed to evade AV and is more a tool for removing unwanted characters, but nevertheless it did prove effective in some cases of evading AV.  Since vendors have access to metasploit now, most AV will detect it.
