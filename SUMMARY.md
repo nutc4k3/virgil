@@ -26,6 +26,7 @@
   * [PHP](web-applications/php.md)
   * [SQL Injection](web-applications/sql-injection.md)
   * [XXE](web-applications/xxe.md)
+  * [CMS](web-applications/cms.md)
 * [Pivoting/Tunelling](pivoting-tunelling.md)
 * [Data Exfiltration](data-exfiltration.md)
 * [Shells](shells.md)
