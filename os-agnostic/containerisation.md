@@ -8,3 +8,11 @@ If you have code-execution in a host with docker installed, and have the appropr
 
 ### docker.sock
 
+### --privileged
+
+```text
+/sbin/capsh --print
+```
+
+If you see `CAP_SYS_ADMIN`, then congratulations, you won.
+
