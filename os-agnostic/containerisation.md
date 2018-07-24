@@ -18,3 +18,7 @@ The fo
 
 If you see `CAP_SYS_ADMIN`, then congratulations, you won.
 
+
+
+[https://ericchiang.github.io/post/containers-from-scratch/](https://ericchiang.github.io/post/containers-from-scratch/)
+
