@@ -10,6 +10,8 @@ If you have code-execution in a host with docker installed, and have the appropr
 
 ### --privileged
 
+The fo
+
 ```text
 /sbin/capsh --print
 ```
