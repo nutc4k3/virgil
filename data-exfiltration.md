@@ -68,6 +68,12 @@ A good option for recent Windows based systems is a modified [Powershell-ICMP-Se
     Write-Output "File Transfered"
 ```
 
+This same technique is often used to construct a shell over the ICMP protocol.
+
+### Defenses
+
+A simple solution many may suggest is to simply block
+
 ## Error Codes
 
 We can exfiltrate arbitrary data via literally nothing but error-codes. Here I'll walk through the stages to set up and test this for exfiltrating some file.
@@ -105,4 +111,6 @@ def decode_error(errorval):
 
     return val.decode('hex')
 ```
+
+An example of this technique was described in [HackTheBox - Minion Error Code Exfiltration](https://reboare.github.io/hackthebox/minion.html).
 
