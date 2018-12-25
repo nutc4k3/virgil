@@ -123,7 +123,7 @@ whoami /priv
 
 ```
 
-{% embed data="{\"url\":\"https://github.com/decoder-it/lonelypotato\",\"type\":\"link\",\"title\":\"decoder-it/lonelypotato\",\"description\":\"lonelypotato - Modified version of RottenPotatoNG C++\",\"icon\":{\"type\":\"icon\",\"url\":\"https://github.com/fluidicon.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://avatars0.githubusercontent.com/u/35346881?s=400&v=4\",\"width\":420,\"height\":420,\"aspectRatio\":1}}" %}
+{% embed url="https://github.com/decoder-it/lonelypotato" %}
 
 ```bash
 C:\>lonely.exe * shell.exe

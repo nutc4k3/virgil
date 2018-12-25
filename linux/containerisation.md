@@ -63,7 +63,7 @@ Common exploitation methods from this point on include editing the passwd file, 
 
 
 
-{% embed data="{\"url\":\"https://ericchiang.github.io/post/containers-from-scratch/\",\"type\":\"link\",\"title\":\"Containers from Scratch \| posts\"}" %}
+{% embed url="https://ericchiang.github.io/post/containers-from-scratch/" %}
 
 [https://kinvolk.io/blog/2018/04/towards-unprivileged-container-builds/](https://kinvolk.io/blog/2018/04/towards-unprivileged-container-builds/)
 

@@ -104,5 +104,6 @@ However, do note that `ctxsys` can do the same, but all results are transformed 
 [Oracle DB Vulnerabilities: The Missing Pentester Handbook](https://hackmag.com/uncategorized/looking-into-methods-to-penetrate-oracle-db/)  
 [Hardening Oracle Databases](https://github.com/Reboare/virgil/tree/a351ca46a5878a5ce9a56487f86be1220237a833/h%20ttp:/www.ordba.net/Articles/HardeningOracleDB.htm)  
 [Simple Oracle Privilege Escalation Techniques](http://ora-600.pl/art/oracle_privilege_escalation.pdf)  
-[Simple Oracle Privilege Escalation Techniques 2](http://ora-600.pl/art/privilege_escalation_2.pdf)
+[Simple Oracle Privilege Escalation Techniques 2](http://ora-600.pl/art/privilege_escalation_2.pdf)  
+[HTB Silo Writeup by 0xEA31 - Enumeration Techniques](https://forum.hackthebox.eu/discussion/973/silo-write-up-unintended-without-odat-by-0xea31)
 
