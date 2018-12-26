@@ -65,5 +65,7 @@ Common exploitation methods from this point on include editing the passwd file, 
 
 {% embed url="https://ericchiang.github.io/post/containers-from-scratch/" %}
 
-[https://kinvolk.io/blog/2018/04/towards-unprivileged-container-builds/](https://kinvolk.io/blog/2018/04/towards-unprivileged-container-builds/)
+{% embed url="https://kinvolk.io/blog/2018/04/towards-unprivileged-container-builds/" %}
+
+{% embed url="https://blog.m0noc.com/2018/10/lxc-container-privilege-escalation-in.html" %}
 
