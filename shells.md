@@ -140,3 +140,7 @@ xterm -display <server ip>:3
 
 From this you'll receive a reverse shell.
 
+## OpenSSL
+
+[https://blog.inequationgroup.com/openssl-nc/](https://blog.inequationgroup.com/openssl-nc/)
+
