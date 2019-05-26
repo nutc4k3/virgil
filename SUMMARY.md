@@ -45,4 +45,8 @@
     * [Blind ROP](binary-exploitation/stack-based/blind-rop.md)
 * [Infrastructure](infrastructure.md)
 * [Password Cracking](password-cracking.md)
+* [Cloud](cloud/README.md)
+  * [AWS](cloud/aws.md)
+* [Walkthroughs](walkthroughs/README.md)
+  * [flaws.cloud](walkthroughs/flaws.cloud.md)
 
